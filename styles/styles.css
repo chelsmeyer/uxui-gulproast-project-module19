@@ -218,7 +218,8 @@ figcaption {
 }
 
 .about-fig {
-    background-image: url(/images/gulp-pouring-coffee-horizontal-sm.jpg);
+    background-color: #082B59;
+    background-image: url(./images/gulp-pouring-coffee-horizontal-sm.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
