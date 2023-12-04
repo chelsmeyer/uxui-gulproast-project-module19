@@ -1,0 +1,398 @@
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.fa-solid {
+    margin-right: 0.4rem;
+}
+
+/* make images flexible */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+a {
+    color: #59331d;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 10px solid #d98555;
+}
+
+/* navbar styling */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+}
+
+/* max width on the image in pixels */
+nav .logo img {
+    max-width: 150px;
+}
+
+/* flex basis on the image container, li */
+nav a {
+    display: block;
+    color: #F2F2F2;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+nav a:hover {
+    background-color: #d98555;
+    color: #F2F2F2;
+}
+
+nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav .logo a:hover {
+    background-color: #082B59;
+}
+
+/* establishes a white background */
+.main-bkgd {
+    background: #ffffff url(/images/gulp-bottom-beans.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+}
+
+/* sits inside of the white background, centered */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+article {
+    flex-basis: 73%;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+}
+
+/* Homepage Banner */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat (3, 200px);
+}
+
+.banner-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/gulp-drinking-coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    grid-column: 1 / 7;
+    grid-row: 1 / 4;
+}
+
+.tagline1,
+.tagline2,
+.tagline3 {
+    color: #f2f2f2;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tagline1 {
+    grid-row: 1 / 1;
+    grid-column: 1 / 7;
+    font-style: italic;
+    justify-self: start;
+    align-self: start;
+}
+
+.tagline2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 7;
+    justify-self: end;
+    align-self: end;
+}
+
+.tagline3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 7;
+    justify-self: end;
+    align-self: end;
+}
+
+.index-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Product cards */
+
+.product-card {
+    display: flex;
+    flex-flow: column nowrap;
+    background: rgb(217, 133, 85, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.product-info {
+    flex-basis: 66%;
+}
+
+.product-img {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+/* image handling */
+
+figure {
+    margin: 3rem 0 0 0;
+    flex-basis: 25%;
+    border-radius: 10px;
+}
+
+figcaption {
+    background-color: #59331d;
+    color: #f2f2f2;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.about-fig {
+    background-image: url(/images/gulp-pouring-coffee-horizontal-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+/* footer elements */
+
+footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+}
+
+footer p {
+    margin: 0.8rem 3rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+
+}
+
+footer a:hover {
+    color: #d98555;
+}
+
+/* Media Query for Midsize Devices */
+
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+    .product-img {
+        justify-content: center;
+    }
+
+    .contact-fig {
+        align-self: center;
+    }
+}
+
+
+/* Media Query for Desktop */
+
+@media only screen and (min-width: 950px) {
+    nav ul {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        display: block;
+        color: #F2F2F2;
+        padding: 1rem 2rem 1.5rem 2rem;
+        text-decoration: none;
+        margin-bottom: -1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    nav a:hover {
+        background-color: #d98555;
+        color: #F2F2F2;
+    }
+
+    .main {
+        flex-flow: row wrap;
+    }
+
+    .index-main {
+        flex-flow: row wrap;
+        gap: 2rem;
+    }
+
+    .tagline1,
+    .tagline2,
+    .tagline3 {
+        color: #f2f2f2;
+        opacity: 0.8;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .tagline1 {
+        grid-row: 1 / 1;
+        grid-column: 1 / 7;
+        font-style: italic;
+        justify-self: start;
+        align-self: center;
+        text-align: left;
+        margin-top: -40px;
+    }
+
+    .tagline2 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 7;
+        justify-self: end;
+        align-self: end;
+        text-align: right;
+    }
+
+    .tagline3 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 7;
+        justify-self: end;
+        align-self: end;
+        text-align: left;
+    }
+
+    .about-fig {
+        background-image: url(/images/gulp-pouring-coffee-vertical.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #59331D;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        color: #f2f2f2;
+        text-decoration: none;
+        border: 3px solid #59331d;
+    }
+
+    .button:hover {
+        background-color: #f2f2f2;
+        color: #59331d;
+    }
+
+    .product-card {
+        flex-flow: row nowrap;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .product-info {
+        flex-basis: 66%;
+    }
+
+    .product-img {
+        flex-basis: 33%;
+        flex-shrink: 0;
+    }
+
+    .contact-fig {
+        flex-basis: 50%;
+    }
+
+    .contact-info {
+        flex-basis: 200px;
+    }
+}
