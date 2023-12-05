@@ -84,7 +84,7 @@ nav .logo a:hover {
 
 /* establishes a white background */
 .main-bkgd {
-    background: #ffffff url(./images/gulp-bottom-beans.jpg) repeat-x bottom;
+    background: #ffffff url(../images/gulp-bottom-beans.jpg) repeat-x bottom;
     padding-bottom: 300px;
 }
 
@@ -131,7 +131,7 @@ article {
 }
 
 .banner-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/gulp-drinking-coffee.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/gulp-drinking-coffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@ figcaption {
 }
 
 .about-fig {
-    background-image: url(./images/gulp-pouring-coffee-horizontal-sm.jpg);
+    background-image: url(../images/gulp-pouring-coffee-horizontal-sm.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -347,7 +347,7 @@ footer a:hover {
     }
 
     .about-fig {
-        background-image: url(./images/gulp-pouring-coffee-vertical.jpg);
+        background-image: url(../images/gulp-pouring-coffee-vertical.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
